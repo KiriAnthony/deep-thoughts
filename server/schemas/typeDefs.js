@@ -30,9 +30,9 @@ type Thought {
 
   type Query {
     users: [User]
-  user(username: String!): User
-  thoughts(username: String): [Thought]
-  thought(_id: ID!): Thought
+    user(username: String!): User
+    thoughts(username: String): [Thought]
+    thought(_id: ID!): Thought
   }
   `;
 
