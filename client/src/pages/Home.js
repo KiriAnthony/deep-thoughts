@@ -36,6 +36,7 @@ const Home = () => {
         </div>
         {loggedIn && userData ? (
           <div className="col-12 col-lg-3 mb-3">
+            {console.log(userData.me.FriendList, userData.me.username, userData.me.friendCount)}
             <FriendList
               username={userData.me.username}
               friendCount={userData.me.friendCount}
